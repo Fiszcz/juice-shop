@@ -12,9 +12,9 @@ module.exports = function productReviews () {
   return (req, res, next) => {
     const user = insecurity.authenticatedUsers.from(req)
     db.reviews.update(
-      { _id: req.body.id },
+      { _id: String(req.body.id) },
       { $set: { message: req.body.message } },
-      { multi: true }
+      { multi: false }
     ).then(
       result => {
         utils.solveIf(challenges.noSqlReviewsChallenge, () => { return result.modified > 1 })
