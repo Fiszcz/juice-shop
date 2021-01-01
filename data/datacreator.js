@@ -572,7 +572,7 @@ function createSecurityAnswer (UserId, SecurityQuestionId, answer) {
 }
 
 function createOrders () {
-  const email = 'admin@' + config.get('application.domain')
+  const email = 'baim@' + config.get('application.domain')
   const products = config.get('products')
   const basket1Products = [
     {
@@ -632,14 +632,6 @@ function createOrders () {
       email: (email ? email.replace(/[aeiou]/gi, '*') : undefined),
       totalPrice: basket2Products[0].total,
       products: basket2Products,
-      eta: '0',
-      delivered: true
-    },
-    {
-      orderId: insecurity.hash('demo').slice(0, 4) + '-' + utils.randomHexString(16),
-      email: 'demo'.replace(/[aeiou]/gi, '*'),
-      totalPrice: basket3Products[0].total + basket3Products[1].total,
-      products: basket3Products,
       eta: '0',
       delivered: true
     }

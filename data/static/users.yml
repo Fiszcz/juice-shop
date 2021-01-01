@@ -241,3 +241,51 @@
   password: 'y&x5Z#f6W532ZUf$q3DsdgfgfgxxUsvoCUaDzFU'
   key: emma
   role: 'customer'
+-
+  email: baim
+  password: '1234mmmm##@#'
+  key: baim
+  role: 'admin'
+  securityQuestion:
+    id: 1
+    answer: 'ihgi43ughi3u54h03982'
+  feedback:
+    comment: '2/10 takie sobie'
+    rating: 1
+  address:
+    - fullName: 'Baim Nowak'
+      mobileNum: 6667778883
+      zipCode: '0000'
+      streetAddress: 'Nowowiejska 10'
+      city: 'Warsaw'
+      state: 'Mazovian'
+      country: 'Poland'
+  card:
+    - fullName: 'Baim Nowak'
+      cardNum: 4716943969046208
+      expMonth: 2
+      expYear: 2081
+-
+  email: kowalski
+  password: 'HU(#U@Nf923f'
+  key: kowalski
+  role: 'customer'
+  securityQuestion:
+    id: 2
+    answer: 'aj90249gu0239gj9uh'
+  feedback:
+    comment: 'sprzedam rower'
+    rating: 5
+  address:
+    - fullName: 'Jan Kowalski'
+      mobileNum: 1116663336
+      zipCode: '0000'
+      streetAddress: 'Powstania Warszawskiego 42'
+      city: 'Warsaw'
+      state: 'Mazovian'
+      country: 'Poland'
+  card:
+    - fullName: 'Karta Jana Kowalskiego'
+      cardNum: 9753943969041111
+      expMonth: 1
+      expYear: 2032
